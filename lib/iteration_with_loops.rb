@@ -7,6 +7,7 @@ def join_nested_strings(src)
       while element_index < src[row_index].length do
         if src[row_index][element_index].is_a?(Integer)
           then src[row_index].shift(element_index)
+        end
       end
       row_index += 1
     end
