@@ -4,7 +4,7 @@ def join_nested_strings(src)
     while row_index < src.length do
       element_index = 0
       while element_index < src[row_index].length do
-        src[row_index][element_index].delete_if {|a| a.is_a?(Integer)}
+        string_element = src[row_index][element_index].delete_if {|a| a.is_a?(Integer)}
           new_array.push(src[row_index][element_index])
         end
         element_index += 1
