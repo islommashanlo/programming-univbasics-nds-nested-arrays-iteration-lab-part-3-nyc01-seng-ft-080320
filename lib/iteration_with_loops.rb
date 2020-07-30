@@ -11,7 +11,7 @@ def join_nested_strings(src)
         else
           new_array.push(src[row_index][element_index])
         end
-
+        element_index += 1
       end
       row_index += 1
     end
