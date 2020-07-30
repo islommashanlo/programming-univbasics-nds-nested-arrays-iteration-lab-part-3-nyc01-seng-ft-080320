@@ -7,7 +7,7 @@ def join_nested_strings(src)
         if src[row_index][element_index].is_a?(Integer)
           then src[row_index].shift(element_index)
         else
-          new_array.push(src[row_index][element_index])
+          src[row_index][element_index] += src[row_index][element_index]
         end
         element_index += 1
       end
